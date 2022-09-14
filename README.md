@@ -1,4 +1,4 @@
-# DO NOT RUN ANY SCRIPTS WITHOUT READING THEM AND MAKING SURE YOU FULLY UNDERSTAND WHAT'S GOING ON.
+# DO NOT RUN ANY SCRIPTS WITHOUT READING THEM AND MAKING SURE YOU FULLY UNDERSTAND WHAT'S BEING DONE.
 # The script below can break your computer, no any responsibility is taken.
 ## Setup
 1. Make sure you have `JAVA_DIR` enviromental variable.
