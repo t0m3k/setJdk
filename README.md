@@ -1,5 +1,5 @@
-# DO NOT RUN ANY SCRIPTS WITHOUT READING AND MAKING SURE YOU FULLY UNDERSTAND WHAT'S GOING ON.
-# The script below can break your computer, no responsibility is taken for usage.
+# DO NOT RUN ANY SCRIPTS WITHOUT READING THEM AND MAKING SURE YOU FULLY UNDERSTAND WHAT'S GOING ON.
+# The script below can break your computer, no any responsibility is taken.
 ## Setup
 1. Make sure you have `JAVA_DIR` enviromental variable.
 2. Make sure that only java path in Path is `%JAVA_DIR%\bin`
