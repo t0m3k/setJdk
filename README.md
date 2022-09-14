@@ -8,4 +8,5 @@
 5. Edit file to set up javaDir and javaPrefix variables.
 ## Usage
 `setJdk.bat 11`
+
 `setJdk.bat 18`
