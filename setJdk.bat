@@ -20,9 +20,9 @@ rem TODO: It would be good idea to check here if anything was found. Or do the c
 
 rem SETTING JAVA HOME
 set JAVA_HOME=%JAVA_DIR%
-rem Line below will make change to local registry, script would have to be run as root
+rem Line below will make change to local registry, you can comment it out if you only use cmd and don't mind java version to be set temporarily.
 setx JAVA_HOME "%JAVA_HOME%"
-rem Comment line above (add rem at the beggining) and uncomment line below (remove rem :) ) to set java globally / will work only as admin and can breake your system
+rem To set java globally comment line above (add rem at the beggining) and uncomment line below (remove rem :) ) / script will work only as admin
 rem setx JAVA_HOME "%JAVA_HOME%" /M
 
 rem This will add path to cmd locally. Thanks to this line, if you're using cmd you should be able to use your java version straight away
@@ -36,9 +36,10 @@ echo Java %javaVersion% hopefully activated. End of script.
 goto:eof
 
 :JavaDir
-rem Get values
+rem Get values from call
 set "javaPath=%~1"
 set "prefix=%~2"
-rem Save name of the found folder to the 
+rem Look for folder matching path/prefixJavaVersion*
 for /f "delims=" %%a in ('dir /b "%javaPath%%prefix%*"') do set "name=%%a"
+rem Set path and folder folder to third parameter with which function was invoked
 set "%~3=%javaPath%%name%"
